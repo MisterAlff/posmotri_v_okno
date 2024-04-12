@@ -94,6 +94,8 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form__fieldset-title {
@@ -192,7 +194,7 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
+  line-height: calc(22/18*100%);
   text-align: center;  
   background-color: transparent;
   border: 1px solid #fff;
@@ -200,12 +202,11 @@ ol {
 }
 
 .search-form__submit-button {
-  min-inline-size: 194px;
-  min-block-size: 34px;
+  padding: 6px 73px;
   align-self: flex-end;
 }
 
 .more-button {
-  min-inline-size: 399px;
-  min-block-size: 34px;
+  padding: 6px 145px;
+
 }
