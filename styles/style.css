@@ -18,7 +18,7 @@ html {
   background-color: #1b1919;
   display: flex;
   /*justify-content: center;*/
-  align-items: flex-start;
+  align-items: center;
   padding-inline-start: 30px;
   padding-inline-end: 30px;
   padding-block-start: 133px;
