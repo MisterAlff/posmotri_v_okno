@@ -43,17 +43,44 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .content {
   display: flex;
   align-items: end;
-  /*min-inline-size: 1140px;*/
+  min-inline-size: 1140px;
   gap: 30px;
+}
+
+.result {
+  inline-size: 62.36%;
+}
+
+.result__video-container {
+  margin-block-end: 13px;
+  position: relative;
+}
+
+.result__video {
+  inline-size: 100%;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.content__details {
+  inline-size: 35%;
 }
 
 .content__list {
@@ -64,22 +91,6 @@ ol {
 
 .content__list::-webkit-scrollbar {
   display: none;
-}
-
-.content__details {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.result__video-container {
-  min-inline-size: 711px;
-  margin-block-end: 13px;
-  position: relative;
-}
-
-.result__video {
-  inline-size: 100%;
-  block-size: 100%;
 }
 
 .content__list-item:not(:nth-last-child(1)) {
@@ -105,52 +116,6 @@ ol {
   line-height: 21.6px;
   text-align: left;
   padding-block-end: 4px;
-}
-
-.title {
-  font-family: Oswald, sans-serif;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 70.5px;
-  text-transform: uppercase;
-  padding-block-end: 26px;
-}
-
-.content__accent {
-  color: #545050;
-}
-
-.content__card-link {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.content__video-card-title {
-  padding-inline-start: 2px;
-  padding-block-start: 2px;
-  font-family: Oswald, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.content__video-card-description {
-  line-height: 16.2px;
-  text-align: left;
-  padding-inline-start: 2px;
-  padding-block-start: 2px;
-}
-
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 .search-form__fieldset {
@@ -212,9 +177,44 @@ ol {
   align-self: flex-end;
 }
 
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-transform: uppercase;
+  padding-block-end: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.content__video-card-title {
+  padding-inline-start: 2px;
+  padding-block-start: 2px;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  line-height: 16.2px;
+  text-align: left;
+  padding-inline-start: 2px;
+  padding-block-start: 2px;
+}
+
 .more-button {
   padding: 5px 145px;
-
 }
 
 .search-form__textfield:focus {
@@ -293,4 +293,3 @@ ol {
   border-block-end: none;
   background-color: #545050;
 }
-
