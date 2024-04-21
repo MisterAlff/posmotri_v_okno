@@ -59,10 +59,11 @@ ol {
 }
 
 .result {
-  inline-size: 62.4%;
+  margin-block-end: 2px;
 }
 
 .result__video-container {
+  inline-size: 711px;
   block-size: 386px;
   margin-block-end: 16px;
   position: relative;
@@ -82,7 +83,7 @@ ol {
 }
 
 .content__details {
-  inline-size: 35%;
+  inline-size: 100%;
 }
 
 .content__list {
@@ -199,7 +200,7 @@ ol {
 }
 
 .content__video-card-description-container {
-  max-inline-size: 200px;
+  inline-size: 200px;
 }
 
 .content__video-card-title {
@@ -224,7 +225,7 @@ ol {
 }
 
 .more-button {
-  margin: 0 1px 1px 2px;
+  margin: 0 2px 2px 2px;
   padding: 5px 144px;
 }
 
